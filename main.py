@@ -4,11 +4,11 @@ from psycopg2 import sql
 def insert_test_data():
     # 데이터베이스 연결 설정
     connection = psycopg2.connect(
-        host='bigsoft.iptime.org',    # 데이터베이스 서버 주소
-        port='55422',
-        database='keti_3pdx',  # 데이터베이스 이름
-        user='keti_root',       # 데이터베이스 사용자 이름
-        password='madcoder')   # 사용자 비밀번호
+        host='bigsoft.iptime.org',      # 데이터베이스 서버 주소
+        port='55422',                   # 데이터베이스 서버 포트
+        database='keti_3pdx',           # 데이터베이스 이름
+        user='keti_root',               # 데이터베이스 사용자 이름
+        password='madcoder')            # 사용자 비밀번호
 
     # 커서 생성
     cursor = connection.cursor()
